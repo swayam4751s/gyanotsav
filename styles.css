@@ -285,16 +285,34 @@ body::before {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 0 15px;
     }
     
     .logo-image {
-        height: 50px;
+        height: 45px;
+    }
+    
+    .alumni-btn {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .main-content {
+        padding: 100px 15px 40px 15px;
     }
     
     .payment-modal {
-        padding: 30px 20px;
+        padding: 25px 20px;
+        margin: 0 10px;
     }
     
     .modal-title {
