@@ -83,7 +83,7 @@
             </p>
             
             <div class="action-buttons">
-                <button class="action-btn download-btn">Download E-Pass</button>
+                <button class="action-btn download-btn" onclick="downloadEPass()">Download E-Pass</button>
                 <button class="action-btn mail-btn" onclick="window.location.href='mailto:cse22_swayampatwa@ggct.co.in'">Send Via Mail</button>
             </div>
         </div>
@@ -106,5 +106,19 @@
             © 2024 Gyanotsav. All Rights Reserved.
         </div>
     </footer>
+
+    <script>
+        function downloadEPass() {
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = 'assests/E-PASS-GYANOTSAV-2025-Swayam Patwa.pdf';
+            link.download = 'E-PASS-GYANOTSAV-2025-Swayam Patwa.pdf';
+            
+            // Append to body, click, and remove
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
 </body>
 </html>

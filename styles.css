@@ -60,6 +60,21 @@ body::before {
     padding: 0 8px;
 }
 
+.alumni-btn {
+    background-color: #ff6b9d;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -86,29 +101,6 @@ body::before {
 
 .alumni-btn:hover {
     background-color: #ff5582;
-}
-
-/* Hamburger Menu */
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-}
-
-.hamburger-line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    transform-origin: 1px;
 }
 
 .header-line {
@@ -293,22 +285,12 @@ body::before {
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
+        flex-direction: column;
+        gap: 20px;
     }
     
     .logo-image {
         height: 50px;
-    }
-    
-    .alumni-btn {
-        display: none;
-    }
-    
-    .hamburger-menu {
-        display: flex;
     }
     
     .payment-modal {
